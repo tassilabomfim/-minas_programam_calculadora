@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <div class="conteudo">
+    <div class="container_logominas">
+      <img src="./public/LOGO_MINAS_PROG.png" alt="LOGO_MINAS_PROG" id="logominas">
+    </div>
+    <div class="container_calculador">
+      <div class="calculador">
+        <p class="result" id="resultado"> </p>
+
+        <table>
+          <tr>
+            <td><button class="btn ac" style="width: 106px;" onclick="clean()"> AC </button> </td>
+
+            <td><button class="btn neg" onclick="backspace()"> <i class="fas fa-backspace"></i> </button> </td>
+
+            <td><button class="btn especial" onclick="insert('/')"> ÷ </button> </td>
+          </tr>
+
+          <tr>
+            <td><button class="btn " onclick="insert('7')"> 7 </button> </td>
+            <td><button class="btn " onclick="insert('8')"> 8 </button> </td>
+            <td><button class="btn " onclick="insert('9')"> 9 </button> </td>
+            <td><button class="btn especial" onclick="insert('*')"> x </button> </td>
+          </tr>
+
+          <tr>
+            <td><button class="btn " onclick="insert('4')"> 4 </button> </td>
+            <td><button class="btn " onclick="insert('5')"> 5 </button> </td>
+            <td><button class="btn " onclick="insert('6')"> 6 </button> </td>
+            <td><button class="btn especial" onclick="insert('-')"> - </button> </td>
+          </tr>
+
+          <tr>
+            <td><button class="btn " onclick="insert('1')"> 1 </button> </td>
+            <td><button class="btn " onclick="insert('2')"> 2 </button> </td>
+            <td><button class="btn " onclick="insert('3')"> 3 </button> </td>
+            <td><button class="btn especial" onclick="insert('+')"> + </button> </td>
+          </tr>
+
+          <tr>
+
+            <td><button class="btn " onclick="insert('0')"> 0 </button> </td>
+            <td><button class="btn " onclick="insert('.')"> . </button> </td>
+            <td><button class="btn igual" style="width: 106px;" onclick="confirma()"> = </button> </td>
+          </tr>
+
+        </table>
+
+      </div>
+      <div class="test">
+        <div class="historico">
+          <h1 id="arrayHistorico">Histórico = [ ];</h1>
+          <br>
+          <h2>Iterações:</h2>
+          <h3 id="requisito1">Quantidade de Itens:</h3>
+          <h3 id="requisito2">Primeiro e ultimo item: [ ];</h3>
+          <h3 id="requisito3">Metodo PUSH():</h3>
+          <h3 id="crescente4">SORT() crescente:</h3>
+          <h3 id="decrescente4">SORT() decrescente:</h3>
+          <h3 id="requisito5">Imprimindo Array:</h3>
+          <h3 id="requisito6">Condicional if else:</h3>
+          <h3 id="requisito7">Numeros entre 10 e 20:</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

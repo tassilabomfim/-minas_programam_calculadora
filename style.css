@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'cursiva', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_calculador {
+  margin-top: 230px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+}
+
+.container_logominas {
+  display: flex;
+  justify-content: center;
+}
+
+#logominas {
+  width: 250px;
+  top: 5%;
+  position: absolute;
+}
+
+.calculador {
+  width: 250px;
+  height: 360px;
+  margin-top: 200px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #000807;
+}
+
+.historico {
+  width: 460px;
+  height: 500px;
+  margin-top: 280px;
+  margin-left: 20px;
+  border: 2px solid #000807;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #652464;
+  font-size: medium;
+}
+
+h1 {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: x-large;
+  color: #ffffff;
+  width: 100%;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+h2 {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: x-large;
+  color: #ffffff;
+}
+
+h3 {
+  margin-left: 10px;
+  margin-top: 15px;
+  font-size: larger;
+  color: #2db0a3;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+
+table td {
+  display: inline-block;
+}
+
+.btn {
+  margin: 3px;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: #0C1A21;
+  color: #dfdfdf;
+  font-size: 16px;
+  transition: all 500ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: #162f3b;
+}
+
+.ac {
+  background-color: #8c2c8b;
+}
+
+.ac:hover {
+  background-color: #652464;
+}
+
+.especial {
+  background-color: #228f84;
+}
+
+.especial:hover {
+  background-color: #18646b;
+}
+
+.igual {
+  background-color: #1b7269;
+}
+
+.igual:hover {
+  background-color: #25968a;
+
+}
+
+.result {
+  height: 100px;
+  color: #dfdfdf;
+  text-align: right;
+  font-size: 40px;
+  word-wrap: break-word;
+  border-bottom: 1px solid #25968a;
+}
